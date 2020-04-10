@@ -1,3 +1,13 @@
+https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3#.44hlq3vvt
+
+https://github.com/stowball/dummys-guide-to-redux-and-thunk-react
+
+Notes:
+
+a component shouldn’t include logic to fetch data, and data shouldn’t be stored in a component’s state, so this is where Redux comes in.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
