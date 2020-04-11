@@ -1,4 +1,4 @@
-import * as types from './actionsTypes';
+import * as types from './actionTypes';
 
 // These are action creators that return a particular action
 export const itemsHasErrored = bool => {
