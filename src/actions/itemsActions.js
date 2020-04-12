@@ -1,7 +1,8 @@
 import * as types from './actionTypes';
 //import axios from 'axios';
 import * as itemsApi from '../api/itemsApi';
-const url = 'http://5826ed963900d612000138bd.mockapi.io/items';
+//const url = 'http://5826ed963900d612000138bd.mockapi.io/items';
+//const url = 'http://localhost:5000/items';
 
 // These are action creators that return a particular action
 export const itemsHasErrored = bool => {
@@ -62,6 +63,7 @@ export const itemsFetchData = url => {
 }
 */
 
+/*
 export const itemsFetchData = () => {
   return (dispatch) => {
     console.log('Dispatching itemsIsLoading');
@@ -85,6 +87,7 @@ export const itemsFetchData = () => {
       .catch(() => dispatch(itemsHasErrored(true)));
   };
 }
+*/
 
 
 export const loadItems = () => {

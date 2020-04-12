@@ -1,6 +1,8 @@
-import { handleError, handleResponse } from './apiHelper';
-import axios from 'axios';
-const url = 'http://5826ed963900d612000138bd.mockapi.io/items';
+//import { handleError, handleResponse } from './apiHelper';
+//import axios from 'axios';
+//const url = 'http://5826ed963900d612000138bd.mockapi.io/items';
+//const url = 'http://localhost:5000/items';
+const url = 'https://nameless-cliffs-80432.herokuapp.com/items';
 
 /*
 export const getItems = () => {
