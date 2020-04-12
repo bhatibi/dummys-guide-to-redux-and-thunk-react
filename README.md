@@ -35,6 +35,12 @@ Notes:
 
 * For using Redux in React, the <Provider /> component wraps the entire application and passes the store down to all children.
 
+* `connect` is what allows us to connect a component to Redux's store.
+
+* We only need to import this action creator, as it handles dispatching the other actions.
+
+* After our component's class definition, we're going to map Redux's state and the dispatching of our action creator to props.
+
 ### Redux Thunk ###
 * Redux action creators don’t support asynchronous actions like fetching data.
 
