@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { loadItems, itemsFetchData } from '../actions/itemsActions';
+import { loadItems } from '../actions/itemsActions';
 
 class ItemList extends Component {
   componentDidMount() {
-    //this.props.fetchData('http://5826ed963900d612000138bd.mockapi.io/items');
     this.props.loadItems();
-    //this.props.fetchData();
   }
 
   render() {
@@ -32,7 +30,6 @@ class ItemList extends Component {
 }
 
 ItemList.propTypes = {
-  //fetchData: PropTypes.func.isRequired,
   loadItems: PropTypes.func.isRequired,
   items: PropTypes.array.isRequired,
   hasErrored: PropTypes.bool.isRequired,
@@ -58,9 +55,7 @@ we need another function to be able to dispatch our
 */
 const mapDispatchToProps = dispatch => {
   return {
-    //fetchData: (url) => dispatch(itemsFetchData(url))
     loadItems: () => dispatch(loadItems())
-    //fetchData: () => dispatch(itemsFetchData())
   };
 };
 
